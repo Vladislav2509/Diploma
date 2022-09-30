@@ -1,0 +1,29 @@
+.inputSearchNavBar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b2f75;
+    opacity: 0.9;
+}
+
+.inputSearch {
+    width: 400px;
+    height: 30px;
+    margin-right: 50px;
+}
+
+.buttonSearch {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    border: none;
+    border-left: 1px solid;
+    cursor: pointer;
+    background-color: #3b2f75;
+    opacity: 0.9;
+}
+
+
+

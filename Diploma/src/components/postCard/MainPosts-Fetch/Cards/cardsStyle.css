@@ -1,0 +1,73 @@
+.cardsWrapper {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 20px;
+    /* filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1)); */
+    border-radius: 4px;
+    transition: 0.25s;
+    
+}
+
+.cardsWrapper:hover {
+    transform: scale(1.1);
+}
+
+.cardsImg {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.like_dislike {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: gainsboro;
+    opacity: 0.85;
+}
+
+.cardLike {
+    background-color: transparent;
+    border: none;
+}
+
+.cardDislike {
+    background-color: transparent;
+    border: none;
+}
+
+.cardBookmark {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: gainsboro;
+    opacity: 0.85;
+}
+
+.cardYear {
+    max-width: 400px;
+    font-size: 18px;
+    margin-top: 0;
+    font-style: italic;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #3b2f75;
+    opacity: 0.9;
+}
+
