@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { NavBar } from './components/navBar/NavBar';
-import { HomePage } from './components/HomePage/HomePage';
+import { HomePage } from './components/pages/HomePage/HomePage';
 
 
 
@@ -10,9 +10,12 @@ import { Registration } from './components/Authorization/LoginRight/Registration
 import { RegistrationConfirmation } from './components/Authorization/LoginRight/RegistrationConfirmation/RegistrationConfirmation';
 import { ProtectedRoute } from './components/ProtectedRoute/ProtectedRoute';
 import { ResetPassword } from './components/Authorization/LoginRight/reset-password/reset-password';
-import { AddPost } from './components/postCard/AddPost/AddPost';
-import { PostMovieFetch } from './components/postCard/MainPosts-Fetch/PostMovie-Fetch/PostMovieFetch';
-import { FavouriteMoviesPage } from './components/pages/favouriteEmpty-Pages/favouriteMoviesPage/favouriteMovies';
+// import { AddPost } from './components/postCard/AddPost/AddPost';
+import { MainMoviePage } from './components/pages/MoviePages/MainPage/MainMoviePage/MainMoviePage-Fetch';
+import { FavouriteMoviesPage } from './components/pages/MoviePages/FavouriteEmptyMovie-Pages/FavouriteMoviesPage/FavouriteMoviesPage';
+import { DetailsMovie } from './components/pages/MoviePages/ExpandedPage/DetailsCardsMoviePage/DetailsCardsMoviePage';
+
+
 
 
 
@@ -25,21 +28,28 @@ export const App = () => {
 
                 <Route path="/all_films" element={
                     <ProtectedRoute>
-                        <PostMovieFetch/>
+                        <MainMoviePage/>
                     </ProtectedRoute>
                 }>
                 </Route>
 
-                <Route path="/add_post" element={
+                {/* <Route path="/add_post" element={
                     <ProtectedRoute>
                         <AddPost />
                     </ProtectedRoute>
                 }>
-                </Route>
+                </Route> */}
 
                 <Route path="/favourite_Movies" element={
                     <ProtectedRoute>
                         <FavouriteMoviesPage />
+                    </ProtectedRoute>
+                }>
+                </Route>
+
+                <Route path="/Movie_Details/:movieID" element={
+                    <ProtectedRoute>
+                        <DetailsMovie/>
                     </ProtectedRoute>
                 }>
                 </Route>

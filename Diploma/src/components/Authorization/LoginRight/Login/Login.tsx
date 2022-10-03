@@ -14,7 +14,7 @@ export function Login(): JSX.Element {
   const handleSubmit = async (e: React.FormEvent): Promise<void> => {
     e.preventDefault();
     await login(email, password);
-    navigate("/all_post");
+    navigate("/all_films");
   };
 
 

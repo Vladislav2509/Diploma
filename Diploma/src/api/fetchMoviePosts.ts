@@ -31,27 +31,56 @@ export const movieRequest = axios.create({
   baseURL: "http://www.omdbapi.com/",
 });
 
+
 movieRequest.interceptors.response.use(onFulfilledRequest, onRejectedResponse);
 
-// export type Response = { results: Post[] };
+export type Response = { results: Post[] };
 
 const DEFAULT_SEARCH_QUERY = 'sport';
+
 
 export const getMoviePosts = createAsyncThunk<
   any,
   string,
   { rejectValue: APIError }
 >(
-  "http://www.omdbapi.com/?i=tt3896198&apikey=8018e9cd",
+  "getMoviePosts",
   async (searchQuery, { rejectWithValue }) => {
     try {
       const response = await movieRequest.get
-        // <Response>
+        <Response>
         ("", {
           params: {
             apikey: "8018e9cd",
             s: searchQuery || DEFAULT_SEARCH_QUERY,
             limit: 250,
+          },
+        });
+
+      return response.data;
+    }
+    catch (ex) {
+      return rejectWithValue(getExceptionPayload(ex));
+    }
+  }
+);
+
+// =================================================
+
+export const getMovieData = createAsyncThunk<
+  any,
+  string,
+  { rejectValue: APIError }
+>(
+  "getMovieData",
+  async (i, { rejectWithValue }) => {
+    try {
+      const response = await movieRequest.get
+        <Response>
+        ("", {
+          params: {
+            apikey: "8018e9cd",
+            i,
           },
         });
 

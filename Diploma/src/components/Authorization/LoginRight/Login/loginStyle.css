@@ -1,8 +1,8 @@
 .container {
+    width: 100%;
     margin: auto;
     padding: 0 16px 0 16px;
-    display: flex;
-    width: 100%;
+    display: flex; 
 }
 
 .mainWrapper {
@@ -17,14 +17,18 @@
 }
 
 .loginTitleButton {
-    background-color: #fff;
+    width: 200px;
+    text-align: center;
+    background-color: #3b2f75;
     border: none;
     font-size: 24px;
     cursor: pointer;
 }
 
 .registrationTitleButton {
-    background-color: #fff;
+    width: 200px;
+    text-align: center;
+    background-color: #3b2f75;
     border: none;
     font-size: 24px;
     color: #8d8e97;
@@ -37,6 +41,8 @@ form {
     filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04))
     drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
     border-radius: 4px;
+    background-color: gainsboro;
+    opacity: 0.9;
 }
 
 .emailPasswordWrapper {
@@ -67,7 +73,7 @@ input {
 
 .submitInputLogin {
     width: 100%;
-    background-color: #2231aa;
+    background-color: #3b2f75;
     border-radius: 2px;
     padding: 18px;
     font-size: 18px;

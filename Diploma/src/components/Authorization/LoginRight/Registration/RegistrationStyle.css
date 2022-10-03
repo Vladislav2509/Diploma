@@ -17,7 +17,9 @@
 }
 
 .loginTitleButton2 {
-    background-color: #fff;
+    width: 200px;
+    text-align: center;
+    background-color: #3b2f75;
     border: none;
     font-size: 24px;
     color: #8d8e97;
@@ -25,7 +27,9 @@
 }
 
 .registrationTitleButton2 {
-    background-color: #fff;
+    width: 200px;
+    text-align: center;
+    background-color: #3b2f75;
     border: none;
     font-size: 24px;
     cursor: pointer;
@@ -39,7 +43,7 @@
 
 .submitInputRegistration {
     width: 100%;
-    background-color: #2231aa;
+    background-color: #3b2f75;
     border-radius: 2px;
     padding: 18px;
     font-size: 18px;

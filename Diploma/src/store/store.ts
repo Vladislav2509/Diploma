@@ -1,20 +1,22 @@
 import { useDispatch } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
 
-import { postsReducer } from './slices/postMovieFetch.Slice';
+import { postsReducer } from './slices/MainMoviePage-Fetch.Slice';
+
 
 import counterReducer from "./slices/counterSlice";
 
-import { favouriteReducer } from "./slices/favouriteMovies/favourite.slice";
+
 
 
 export const store = configureStore({
     reducer: {
 
         counter: counterReducer,
-        postsMovie: postsReducer,
 
-        favourite: favouriteReducer,
+        
+        postsMovie: postsReducer,
+        
 
     }
 });

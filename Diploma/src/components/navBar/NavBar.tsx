@@ -3,7 +3,7 @@ import { Outlet, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth';
 
 import { SearchBar } from './SearchBar/searchBar';
-import { Sidebar } from '../pageSidebar/Sidebar';
+import { Sidebar } from '../pages/SidebarPage/Sidebar';
 
 import iconBurger from '../../images/icons/menu.svg';
 import iconUser from '../../images/icons/user.svg';
@@ -12,13 +12,13 @@ import iconLogOut from '../../images/icons/logOut.svg';
 import '../navBar/navBarStyle.css';
 import frame from '../../images/frame.png';
 import { DetailedSearch } from './SearchBar/detailedSearch/DetailedSearch';
-import { HomePage } from '../HomePage/HomePage';
+import { HomePage } from '../pages/HomePage/HomePage';
 
 
 
 export function NavBar(): JSX.Element {
     const navigate = useNavigate();
-    const [openSidebar, setOpenSidebar] = useState(false);
+    const [openSidebar, setOpenSidebar] = useState(true);
     const { logout } = useAuth();
     const handleLogout = (): void => {
         logout();
@@ -88,7 +88,7 @@ export function NavBar(): JSX.Element {
 
             <Outlet />
             
-
+                
         </div>
     );
 }
