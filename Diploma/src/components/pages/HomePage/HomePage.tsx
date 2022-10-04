@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import GridLoader from "react-spinners/GridLoader";
+import { Footer } from '../../Footer/Footer';
 import { AllInformationPixemaProps } from './allInformationPixema-Props';
 import './homePageStyle.css';
 
@@ -31,9 +32,10 @@ export function HomePage() {
             loading ?
               <div className='gridLoader'><GridLoader color={'#7B61FF'} loading={loading} size={30} /></div>
               :
+              
               <div className='contentHomePage'>
-                <div className='textHomePage'>Welcome to <span className="colorTextPix">Pix</span>
-                  <span className='colorTextEma'>ema</span>
+                <div className='textWelcome'>Welcome to <span className="textPix">Pix</span>
+                  <span className='textEma'>ema</span>
                 </div>
                 <div className='pixemaWrapper'>
                   <div className='previewAndButton'>
@@ -59,28 +61,16 @@ export function HomePage() {
                       </button>
                     </div>
                   </div>)}
-
-                  {/* {open && (<div className='allInformationPixema' onClick={() => setOpen(!open)}>
-                    Pixema provides information about films, television series,
-                    including frames, trailers, posters, wallpapers, as well
-                    as data on persons associated with film and television production: actors,
-                    directors, producers, screenwriters, cameramen, composers, artists and editors.
-
-                    <button
-                      className='buttonLetsGetStarted'
-                      onClick={() => { navigate("/all_films") }}
-                    >
-                      Let's get started
-                    </button>
-
-                  </div>)} */}
                 </div>
-
+                <Footer />
 
               </div>
+            
           }
+          
         </div>
       </div>
+      
     </div>
   )
 };

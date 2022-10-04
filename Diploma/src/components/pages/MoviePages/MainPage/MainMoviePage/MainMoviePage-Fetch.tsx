@@ -13,6 +13,7 @@ import { MainCards } from "../MainMovieCards/MainCardsMoviePage";
 import GridLoader from "react-spinners/GridLoader";
 
 import './mainMoviePage.css';
+import { Footer } from "../../../../Footer/Footer";
 
 
 
@@ -54,10 +55,10 @@ export function MainMoviePage() {
 
   }, [])
 
-  
- 
 
-  
+
+
+
 
   return (
     <div className="containerPostCardFetch">
@@ -83,8 +84,7 @@ export function MainMoviePage() {
                           image={result.Poster}
                           title={result.Title}
                           year={result.Year}
-                          country={result.Country} 
-
+                          country={result.Country}
                         />
                       );
                     })
@@ -102,10 +102,13 @@ export function MainMoviePage() {
                 )
                 }
               </div>
-              
+              <Footer />
             </>
+
         }
+
       </div>
+
     </div>
   );
 };

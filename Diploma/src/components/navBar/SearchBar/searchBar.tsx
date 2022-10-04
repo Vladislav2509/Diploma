@@ -21,16 +21,16 @@ export function SearchBar() {
 
     return (
         <div>
-            <form className='inputSearchNavBar' autoComplete='on'
+            <form className='formSearchNavBar' autoComplete='on'
                 onSubmit={handleSubmit}
             >
                 <input className='inputSearch'
-                    type="search"
+                    type="text"
                     name='search'
                     placeholder='Search...'
                 />
 
-                <button className='buttonSearch' value='Search'><img src={iconSearch} alt="#" /></button>
+                <button className='buttonSearch' value='Search'><img className='headerIcon' src={iconSearch} alt="#" /></button>
             </form>
 
 

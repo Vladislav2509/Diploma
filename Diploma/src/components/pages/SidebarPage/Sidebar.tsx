@@ -25,9 +25,18 @@ export const Sidebar = (props: InputProps) => {
 
       <div className="listSidebar">
         <ul>
-          <li><img className='iconsSidebar' src={house} alt="#" /><Link className='linkListSidebar' to="/home">{home}</Link></li>
-          <li><img src={films} alt="#" /><Link className='linkListSidebar' to="/all_films">{all_films}</Link></li>
-          <li><img src={favourite} alt="#" /><Link className='linkListSidebar' to="/favourite_Movies">{favorites_movies}</Link></li>
+          <li>
+            <img className='iconsSidebar' src={house} alt="#" />
+            <Link className='linkListSidebar' to="/home">{home}</Link>
+          </li>
+          <li>
+            <img src={films} alt="#" />
+            <Link className='linkListSidebar' to="/all_films">{all_films}</Link>
+          </li>
+          <li>
+            <img src={favourite} alt="#" />
+            <Link className='linkListSidebar' to="/favourite_Movies">{favorites_movies}</Link>
+          </li>
         </ul>
       </div>
 

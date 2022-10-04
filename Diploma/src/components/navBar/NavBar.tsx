@@ -36,7 +36,7 @@ export function NavBar(): JSX.Element {
 
                 <div className='burgerAndUserNameNavBar'>
                     <div className="burgerImgNavBar" onClick={() => setOpenSidebar(!openSidebar)}>
-                        <img src={iconBurger} alt="#" />
+                        <img className='headerIcon' src={iconBurger} alt="#" />
                     </div>
 
                     <div className='userEmailNavBar'>
@@ -49,7 +49,7 @@ export function NavBar(): JSX.Element {
                 {/* ======================================================================= */}
 
                 <div className='imgDetailedSearch' onClick={() => setopenDetailedSearch(!openDetailedSearch)}>
-                    <img src={frame} alt="" />
+                    <img className='headerIcon' src={frame} alt="" />
                 </div>
                 {/* ======================================================================= */}
 
@@ -58,14 +58,14 @@ export function NavBar(): JSX.Element {
                 <div className="userNavBar" onClick={() => {
                     navigate("/user")
                 }}>
-                    <img src={iconUser} alt="#" />
+                    <img className='headerIcon' src={iconUser} alt="#" />
                 </div>
 
                 <div className='logoutNavBar' onClick={() => {
                     navigate("/home")
                     handleLogout()
                 }}>
-                    <img src={iconLogOut} alt="#" />
+                    <img className='headerIcon' src={iconLogOut} alt="#" />
                 </div>
 
 

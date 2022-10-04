@@ -2,10 +2,8 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    /* filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1)); */
     border-radius: 4px;
     transition: 0.25s;
-
 }
 
 .cardsWrapper:hover {
@@ -31,47 +29,8 @@
     opacity: 0.9;
 }
 
-.buttonWrapper {
-    display: flex;
-    justify-content: space-between;
-    border-radius: 20px;
-}
-
-.like_dislike {
-    width: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    cursor: pointer;
-    border-radius: 5px;
-    background-color: gainsboro;
-    opacity: 0.85;
-}
-
-.cardLike {
-    background-color: transparent;
-    border: none;
-}
-
-.cardDislike {
-    background-color: transparent;
-    border: none;
-}
-
-.cardBookmark {
-    width: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border-radius: 5px;
-    background-color: gainsboro;
-    opacity: 0.85;
-}
-
 .cardYear {
-    max-width: 400px;
+    max-width: 300px;
     font-size: 18px;
     margin-top: 0;
     margin-bottom: 0;
@@ -81,4 +40,172 @@
     border-radius: 5px;
     background-color: #3b2f75;
     opacity: 0.9;
+}
+
+/* .buttonWrapper {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+} */
+
+/* .like_dislike {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: gainsboro;
+    opacity: 0.85;
+} */
+
+/* .cardLike {
+    background-color: transparent;
+    border: none;
+}
+
+.cardDislike {
+    background-color: transparent;
+    border: none;
+} */
+
+.cardBookmark {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: gainsboro;
+    opacity: 0.85;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+    .cardsWrapper {
+        padding: 7px;
+        margin: auto;
+        border-radius: 4px;
+        transition: 0.25s;
+    }
+
+    .movieCardsImg {
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        display: flex;
+    }
+
+    .movieCardsTitle {
+        width: 200px;
+        font-size: 18px;
+    }
+
+    .cardYear {
+        max-width: 200px;
+        font-size: 18px;
+    }
+
+    .cardBookmark {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .cardsWrapper {
+        padding: 7px;
+        margin: auto;
+        border-radius: 4px;
+        transition: 0.25s;
+    }
+
+    .movieCardsImg {
+        width: 180px;
+        height: 180px;
+        border-radius: 20px;
+        display: flex;
+    }
+
+    .movieCardsTitle {
+        width: 180px;
+        font-size: 16px;
+    }
+
+    .cardYear {
+        max-width: 180px;
+        font-size: 16px;
+    }
+
+    .cardBookmark {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .cardsWrapper {
+        padding: 7px;
+        margin: auto;
+        border-radius: 4px;
+        transition: 0.25s;
+    }
+
+    .movieCardsImg {
+        width: 120px;
+        height: 120px;
+        border-radius: 20px;
+        display: flex;
+    }
+
+    .movieCardsTitle {
+        width: 120px;
+        font-size: 12px;
+    }
+
+    .cardYear {
+        max-width: 120px;
+        font-size: 12px;
+    }
+
+    .cardBookmark {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .cardsWrapper {
+        padding: 7px;
+        margin: auto;
+        border-radius: 4px;
+        transition: 0.25s;
+    }
+
+    .movieCardsImg {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        display: flex;
+    }
+
+    .movieCardsTitle {
+        width: 80px;
+        font-size: 8px;
+    }
+
+    .cardYear {
+        max-width: 80px;
+        font-size: 8px;
+    }
+
+    .cardBookmark {
+        width: 80px;
+        height: 25px;
+    }
 }

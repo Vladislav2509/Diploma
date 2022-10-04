@@ -14,14 +14,14 @@ body {
 
 .containerHomePage {
   width: 100%;
-  height: 1300px;
-  margin: 0 auto;
+  margin: auto;
   background-size: cover;
   background-position: center;
 }
 
 /* blok_two */
 .blokHomePage {
+  margin: auto;
   display: flex;
   justify-content: center;
 }
@@ -34,30 +34,27 @@ body {
 
 .contentHomePage {
   width: 1200px;
-  height: 600px;
-  margin-top: 100px;
-  margin-left: 100px;
-  background-size: cover;
-  background-position: center;
+  margin: auto;
+  margin-top: 70px;
 }
 
-.textHomePage {
+.textWelcome {
   width: 170px;
   height: 100px;
-  margin-top: 70px;
+  margin-top: 40px;
   margin-left: 70px;
   font-size: 30px;
   color: white;
   font-family: "Cantarell";
 }
 
-.colorTextPix {
+.textPix {
   font-size: 50px;
   font-weight: 600;
   color: #7B61FF;
 }
 
-.colorTextEma {
+.textEma {
   font-size: 50px;
   font-weight: 600;
   color: white;
@@ -66,6 +63,7 @@ body {
 .pixemaWrapper {
   display: flex;
   margin-top: 10px;
+  margin-bottom: 150px;
   color:  #0000FF;
 }
 
@@ -76,7 +74,7 @@ body {
 
 .previewPixema {
   width: 300px;
-  height: 110px;
+  height: 230px;
   margin-left: 70px;
   font-weight: 500;
   font-size: 25px;
@@ -86,7 +84,7 @@ body {
 .buttonLearnMore {
   width: 200px;
   height: 50px;
-  margin-top: 150px;
+  margin-top: 20px;
   margin-left: 70px;
   font-size: 20px;
   cursor: pointer;
@@ -104,7 +102,7 @@ body {
 
 .allInformationPixema {
   width: 500px;
-  height: 260px;
+  height: 230px;
   margin-left: 20px;
   font-size: 25px;
   font-weight: 500;
@@ -118,6 +116,7 @@ body {
 .buttonLetsGetStarted {
   width: 200px;
   height: 50px;
+  margin-top: 20px;
   font-size: 20px;
   cursor: pointer;
   border-radius: 30px;
@@ -132,5 +131,269 @@ body {
   color: black;
 }
 
+
+
+@media screen and (max-width: 1200px) {
+  
+  .contentHomePage {
+    width: 850px;
+  }
+  
+  .textWelcome {
+    width: 150px;
+    height: 100px;
+    margin-top: 25px;
+    margin-left: 70px;
+    font-size: 27px;
+  }
+  
+  .textPix {
+    font-size: 42px;
+    font-weight: 600;
+  }
+  
+  .textEma {
+    font-size: 42px;
+    font-weight: 600;
+  }
+  
+  .pixemaWrapper {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 140px;
+    color:  #0000FF;
+  }
+  
+  .previewPixema {
+    width: 280px;
+    height: 215px;
+    margin-left: 70px;
+    font-weight: 500;
+    font-size: 23px;
+  }
+  
+  .buttonLearnMore {
+    width: 170px;
+    height: 45px;
+    margin-top: 20px;
+    margin-left: 70px;
+    font-size: 20px;
+  }
+  
+  .buttonLearnMore:hover {
+    background-color: #7B61FF;
+    color: black;
+  }
+  
+  .allInformationPixema {
+    width: 450px;
+    height: 215px;
+    margin-left: 20px;
+    font-size: 23px;
+    font-weight: 500;
+  }
+  
+  .buttonLetsGetStarted {
+    width: 170px;
+    height: 45px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    background-color: blue;
+    color: white;
+    transition: .7s;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+
+  .contentHomePage {
+    width: 650px;
+  }
+  
+  .textWelcome {
+    width: 130px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 55px;
+    font-size: 24px;
+  }
+  
+  .textPix {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  
+  .textEma {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  
+  .pixemaWrapper {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 100px;
+  }
+  
+  .previewPixema {
+    width: 260px;
+    height: 200px;
+    margin-left: 55px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+  .buttonLearnMore {
+    width: 160px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 55px;
+    font-size: 18px;
+  }
+  
+  
+  .allInformationPixema {
+    width: 280px;
+    height: 200px;
+    margin-left: 20px;
+    font-size: 17.1px;
+    font-weight: 500;
+  }
+  
+  .buttonLetsGetStarted {
+    width: 160px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    background-color: blue;
+    color: white;
+    transition: .7s;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .contentHomePage {
+    width: 490px;
+  }
+  
+  .textWelcome {
+    width: 120px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 22px;
+  }
+  
+  .textPix {
+    font-size: 35px;
+  }
+  
+  .textEma {
+    font-size: 35px;
+  }
+  
+  .pixemaWrapper {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 100px;
+  }
+  
+  .previewPixema {
+    width: 210px;
+    height: 180px;
+    margin-left: 50px;
+    font-weight: 500;
+    font-size: 13px;
+  }
+  
+  .buttonLearnMore {
+    width: 140px;
+    height: 35px;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 16px;
+  }
+  
+  
+  .allInformationPixema {
+    width: 180px;
+    height: 180px;
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+  .buttonLetsGetStarted {
+    width: 140px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .contentHomePage {
+    width: 300px;
+  }
+  
+  .textWelcome {
+    width: 85px;
+    height: 55px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 16px;
+  }
+  
+  .textPix {
+    font-size: 26px;
+  }
+  
+  .textEma {
+    font-size: 26px;
+  }
+  
+  .pixemaWrapper {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 90px;
+  }
+  
+  .previewPixema {
+    width: 120px;
+    height: 105px;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 8px;
+  }
+  
+  .buttonLearnMore {
+    width: 85px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 10px;
+  }
+  
+  
+  .allInformationPixema {
+    width: 120px;
+    height: 105px;
+    margin-left: 15px;
+    font-size: 8px;
+    font-weight: 500;
+  }
+  
+  .buttonLetsGetStarted {
+    width: 85px;
+    height: 30px;
+    font-size: 10px;
+  }
+
+}
 
 

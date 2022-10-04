@@ -2,15 +2,11 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { NavBar } from './components/navBar/NavBar';
 import { HomePage } from './components/pages/HomePage/HomePage';
-
-
-
 import { Login } from './components/Authorization/LoginRight/Login/Login';
 import { Registration } from './components/Authorization/LoginRight/Registration/Registration';
 import { RegistrationConfirmation } from './components/Authorization/LoginRight/RegistrationConfirmation/RegistrationConfirmation';
 import { ProtectedRoute } from './components/ProtectedRoute/ProtectedRoute';
 import { ResetPassword } from './components/Authorization/LoginRight/reset-password/reset-password';
-// import { AddPost } from './components/postCard/AddPost/AddPost';
 import { MainMoviePage } from './components/pages/MoviePages/MainPage/MainMoviePage/MainMoviePage-Fetch';
 import { FavouriteMoviesPage } from './components/pages/MoviePages/FavouriteEmptyMovie-Pages/FavouriteMoviesPage/FavouriteMoviesPage';
 import { DetailsMovie } from './components/pages/MoviePages/ExpandedPage/DetailsCardsMoviePage/DetailsCardsMoviePage';
@@ -32,13 +28,6 @@ export const App = () => {
                     </ProtectedRoute>
                 }>
                 </Route>
-
-                {/* <Route path="/add_post" element={
-                    <ProtectedRoute>
-                        <AddPost />
-                    </ProtectedRoute>
-                }>
-                </Route> */}
 
                 <Route path="/favourite_Movies" element={
                     <ProtectedRoute>
@@ -67,9 +56,6 @@ export const App = () => {
                 <Route path="/backToHome" element={<HomePage />}></Route>
 
                 <Route path="/reset_password" element={<ResetPassword />}></Route>
-
-                {/* <Route path="/detailed_search" element={<DetailedSearch />}></Route> */}
-
 
             </Route>
 
