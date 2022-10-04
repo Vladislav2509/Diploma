@@ -42,34 +42,6 @@
     opacity: 0.9;
 }
 
-/* .buttonWrapper {
-    display: flex;
-    justify-content: space-between;
-    border-radius: 20px;
-} */
-
-/* .like_dislike {
-    width: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    cursor: pointer;
-    border-radius: 5px;
-    background-color: gainsboro;
-    opacity: 0.85;
-} */
-
-/* .cardLike {
-    background-color: transparent;
-    border: none;
-}
-
-.cardDislike {
-    background-color: transparent;
-    border: none;
-} */
-
 .cardBookmark {
     width: 300px;
     height: 40px;
@@ -81,9 +53,6 @@
     background-color: gainsboro;
     opacity: 0.85;
 }
-
-
-
 
 @media screen and (max-width: 1200px) {
 

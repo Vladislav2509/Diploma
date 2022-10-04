@@ -28,18 +28,6 @@ export function DetailsMovie() {
   });
 
 
-  // console.log(data);
-
-  // function getDetails(state: any, id: string | undefined) {
-  //   if (state.length > 0) {
-  //     const result = state.find((element: any) => element.imdbID === id);
-  //     return result;
-  //   }
-  // }
-  // console.log(getDetails(data, movieID));
-  // const currentData = getDetails(data, movieID)
-
-
   if (!post) { return null }
 
   return (
@@ -50,16 +38,16 @@ export function DetailsMovie() {
           <div className="poster">
             <img className="movieDetailsPoster" src={post.Poster} />
             <div className="BookmarkDetailsMovie">
-              <img src={iconBookmark} alt="Bookmark" />
+              <img className="imgBookmarkDetailsMovie" src={iconBookmark} alt="Bookmark" />
             </div>
           </div>
 
 
           <div className="allContent">
 
-            <p>{post.Genre}</p>
-            <h1>{post.Title}</h1>
-            <div className="ratingRuntime">
+            <p className="genreDetailsMovie">{post.Genre}</p>
+            <h1 className="titleDetailsMovie">{post.Title}</h1>
+            <div className="ratingDetailsMovie">
               <p className="imdbRating">{post.imdbRating}</p>
               <p className="runtime">{post.Runtime}</p>
             </div>

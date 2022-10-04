@@ -1,23 +1,27 @@
 .containerConfirmation {
     width: 100%;
-    max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 80px;
 }
 
-.link {
+.linkConfirmation {
     width: 100%;
     max-width: 620px;
     height: 40px;
     margin-top: 50px;
+    text-decoration: none;
     align-items: center;
+    color: white;
 }
 
-.textRegistrationConfirmation{
+.textRegistrationConfirmation {
     width: 100%;
     max-width: 800px;
     height: 150px;
     align-items: center;
     font-size: 25px;
+    color: white;
 }
 
 .activateWithEmail {
@@ -30,6 +34,7 @@
     align-items: center;
     font-size: 20px;
     font-weight: 500;
+    color: white;
 }
 
 .checkEmail {

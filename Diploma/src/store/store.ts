@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
 
 import { postsReducer } from './slices/MainMoviePage-Fetch.Slice';
-
+import { favoritesReducer } from "./slices/favorites.slice";
 
 import counterReducer from "./slices/counterSlice";
 
@@ -13,9 +13,9 @@ export const store = configureStore({
     reducer: {
 
         counter: counterReducer,
-
-        
         postsMovie: postsReducer,
+
+        favorites: favoritesReducer,
         
 
     }

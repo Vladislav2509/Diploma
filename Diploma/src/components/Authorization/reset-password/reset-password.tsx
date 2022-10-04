@@ -12,7 +12,7 @@ import {
   SubmitButton,
   SubmitInput,
 } from "./styled";
-import { resetPassword } from "../../../../hooks/auth.service";
+import { resetPassword } from "../../../hooks/auth.service";
 
 export const ResetPassword = () => {
   const navigate = useNavigate();

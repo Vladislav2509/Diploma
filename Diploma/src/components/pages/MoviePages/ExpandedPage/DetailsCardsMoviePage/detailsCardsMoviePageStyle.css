@@ -1,10 +1,8 @@
 .newInput {
     width: 100%;
-    /* margin: auto; */
     display: flex;
     justify-content: center;
     padding: 90px;
-    /* background-color: aqua;  */
 }
 
 .ContainerDetailsMovie {
@@ -43,16 +41,22 @@
 .allContent {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 5px;
     margin-left: 40px;
     font-size: 20px;
     font-weight: 600px;
     color: #FFFFFF;
 }
 
-.ratingRuntime {
+.titleDetailsMovie {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.ratingDetailsMovie {
     display: flex;
     gap: 30px;
+    margin-top: 10px;
 }
 
 .imdbRating {
@@ -61,6 +65,7 @@
     display: flex;
     justify-content: center;
     border-radius: 6px;
+    margin-top: 0;
     background-color: #00A340;
     color: #FFFFFF;
 }
@@ -71,28 +76,27 @@
     display: flex;
     justify-content: center;
     border-radius: 6px;
+    margin-top: 0;
     background-color: #323537;
     color: #FFFFFF;
 }
 
 .plot {
-    max-width: 600px;
-    min-height: 80px;
-    /* background-color: red; */
+    width: 550px;
+    height: 75px;
+    margin-top: 10px;
 }
 
 .containerСategories {
     width: 550px;
-    height: 320px;
-    margin-top: 40px;
+    margin-top: 10px;
     font-weight: 500;
-    /* background-color: green; */
 }
 
 .allСategories {
     display: flex;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     color: #FFFFFF;
 }
 
@@ -114,4 +118,381 @@
 p {
     margin-bottom: 0;
     font-weight: 500;
+}
+
+
+@media screen and (max-width: 1200px) {
+    
+    .ContainerDetailsMovie {
+        width: 1100px;
+        height: 700px;
+    }
+    
+    .poster {
+        margin-top: 30px;
+    }
+    
+    .movieDetailsPoster {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .BookmarkDetailsMovie {
+        width: 250px; 
+    }
+    
+    .allContent {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        margin-left: 40px;
+        font-size: 20px;
+        font-weight: 600px;
+        color: #FFFFFF;
+    }
+    
+    .titleDetailsMovie {
+        margin: 0;
+        margin-top: 10px;
+        font-size: 33px;
+    }
+    
+    .ratingDetailsMovie {
+        display: flex;
+        gap: 30px;
+        margin-top: 10px;
+    }
+    
+    .imdbRating {
+        width: 37px;
+        height: 28px;  
+    }
+    
+    .runtime {
+        width: 73px;
+        height: 28px;
+    }
+    
+    .plot {
+        width: 500px;
+        height: 75px;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    
+    .containerСategories {
+        width: 500px;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+    
+    .allСategories {
+        display: flex;
+        font-weight: 600;
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+    
+    .description {
+        width: 85px;
+    }
+    
+    .detailsMovie {
+        min-height: 24px;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 16px;
+        margin-left: 100px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .ContainerDetailsMovie {
+        width: 800px;
+        height: 700px;
+    }
+    
+    .poster {
+        margin-top: 30px;
+    }
+    
+    .movieDetailsPoster {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .BookmarkDetailsMovie {
+        width: 200px; 
+    }
+    
+    .allContent {
+        margin-top: 5px;
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: 600px;
+    }
+
+    .genreDetailsMovie {
+        font-size: 15px;
+    }
+    
+    .titleDetailsMovie {
+        margin: 0;
+        margin-top: 10px;
+        font-size: 30px;
+    }
+    
+    .ratingDetailsMovie {
+        display: flex;
+        font-size: 20px;
+        gap: 30px;
+        margin-top: 10px;
+    }
+    
+    .imdbRating {
+        width: 35px;
+        height: 26px; 
+        font-size: 15px;
+        font-display: flex;
+        align-items: center;
+    }
+    
+    .runtime {
+        width: 70px;
+        height: 26px;
+        font-size: 15px;
+        font-display: flex;
+        align-items: center;
+    }
+    
+    .plot {
+        width: 350px;
+        height: 60px;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    
+    .containerСategories {
+        width: 350px;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+    
+    .allСategories {
+        display: flex;
+        font-weight: 600;
+        font-size: 12px;
+        color: #FFFFFF;
+    }
+    
+    .description {
+        width: 60px;
+    }
+    
+    .detailsMovie {
+        min-height: 24px;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 13px;
+        margin-left: 70px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .ContainerDetailsMovie {
+        width: 450px;
+        height: 700px;
+    }
+    
+    .poster {
+        margin-top: 30px;
+    }
+    
+    .movieDetailsPoster {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .BookmarkDetailsMovie {
+        width: 150px; 
+    }
+
+    .imgBookmarkDetailsMovie {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .allContent {
+        margin-top: 15px;
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: 600px;
+    }
+
+    .genreDetailsMovie {
+        font-size: 13px;
+    }
+    
+    .titleDetailsMovie {
+        margin: 0;
+        margin-top: 10px;
+        font-size: 27px;
+    }
+    
+    .ratingDetailsMovie {
+        display: flex;
+        gap: 30px;
+        margin-top: 10px;
+    }
+    
+    .imdbRating {
+        width: 33px;
+        height: 24px; 
+        font-size: 12px;
+        font-display: flex;
+        align-items: center;
+    }
+    
+    .runtime {
+        width: 67px;
+        height: 24px;
+        font-size: 12px;
+        font-display: flex;
+        align-items: center;
+    }
+    
+    .plot {
+        width: 250px;
+        height: 55px;
+        font-size: 9px;
+        margin-top: 10px;
+    }
+    
+    .containerСategories {
+        width: 250px;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+    
+    .allСategories {
+        display: flex;
+        font-weight: 600;
+        font-size: 12px;
+    }
+    
+    .description {
+        width: 45px;
+    }
+    
+    .detailsMovie {
+        display: flex;
+        align-items: center;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 9px;
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .ContainerDetailsMovie {
+        width: 320px;
+        height: 700px;
+    }
+    
+    .poster {
+        margin-top: 20px;
+    }
+    
+    .movieDetailsPoster {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .BookmarkDetailsMovie {
+        width: 80px; 
+        height: 25px;
+    }
+
+    .imgBookmarkDetailsMovie {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .allContent {
+        margin-top: 15px;
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: 600px;
+    }
+
+    .genreDetailsMovie {
+        font-size: 9px;
+    }
+    
+    .titleDetailsMovie {
+        margin: 0;
+        margin-top: 10px;
+        font-size: 22px;
+    }
+    
+    .ratingDetailsMovie {
+        display: flex;
+        gap: 22px;
+        margin-top: 10px;
+    }
+    
+    .imdbRating {
+        width: 30px;
+        height: 22px; 
+        font-size: 10px;
+        font-display: flex;
+        align-items: center;
+    }
+    
+    .runtime {
+        width: 58px;
+        height: 22px;
+        font-size: 10px;
+        font-display: flex;
+        align-items: center;
+    }
+    
+    .plot {
+        width: 200px;
+        height: 53px;
+        font-size: 8px;
+        margin-top: 10px;
+    }
+    
+    .containerСategories {
+        width: 200px;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+    
+    .allСategories {
+        display: flex;
+        font-weight: 600;
+        font-size: 10px;
+        color: #FFFFFF;
+    }
+    
+    .description {
+        width: 20px;
+    }
+    
+    .detailsMovie {
+        display: flex;
+        align-items: center;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 7px;
+        margin-left: 110px;
+    }
 }

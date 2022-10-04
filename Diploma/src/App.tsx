@@ -2,18 +2,14 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { NavBar } from './components/navBar/NavBar';
 import { HomePage } from './components/pages/HomePage/HomePage';
-import { Login } from './components/Authorization/LoginRight/Login/Login';
-import { Registration } from './components/Authorization/LoginRight/Registration/Registration';
-import { RegistrationConfirmation } from './components/Authorization/LoginRight/RegistrationConfirmation/RegistrationConfirmation';
+import { Login } from './components/Authorization/Login/Login';
+import { Registration } from './components/Authorization/Registration/Registration';
+import { RegistrationConfirmation } from './components/Authorization/RegistrationConfirmation/RegistrationConfirmation';
 import { ProtectedRoute } from './components/ProtectedRoute/ProtectedRoute';
-import { ResetPassword } from './components/Authorization/LoginRight/reset-password/reset-password';
+import { ResetPassword } from './components/Authorization/reset-password/reset-password';
 import { MainMoviePage } from './components/pages/MoviePages/MainPage/MainMoviePage/MainMoviePage-Fetch';
-import { FavouriteMoviesPage } from './components/pages/MoviePages/FavouriteEmptyMovie-Pages/FavouriteMoviesPage/FavouriteMoviesPage';
 import { DetailsMovie } from './components/pages/MoviePages/ExpandedPage/DetailsCardsMoviePage/DetailsCardsMoviePage';
-
-
-
-
+import { FavoriteMovies } from './components/pages/MoviePages/FavouriteEmptyMovie-Pages/FavouriteMoviesPage/FavoriteMovies';
 
 
 
@@ -31,7 +27,7 @@ export const App = () => {
 
                 <Route path="/favourite_Movies" element={
                     <ProtectedRoute>
-                        <FavouriteMoviesPage />
+                        <FavoriteMovies />
                     </ProtectedRoute>
                 }>
                 </Route>

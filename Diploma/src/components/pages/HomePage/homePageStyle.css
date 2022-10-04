@@ -160,7 +160,7 @@ body {
   .pixemaWrapper {
     display: flex;
     margin-top: 10px;
-    margin-bottom: 140px;
+    margin-bottom: 270px;
     color:  #0000FF;
   }
   
@@ -337,6 +337,7 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+  
   .contentHomePage {
     width: 300px;
   }

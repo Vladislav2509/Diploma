@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { register } from "../../../../hooks/auth.service";
+import { register } from "../../../hooks/auth.service";
 
 import './RegistrationStyle.css'
 
@@ -14,9 +14,9 @@ export function Registration(): JSX.Element {
   const [password, setPassword] = useState("");
   const handleSubmit = async (e: React.FormEvent): Promise<void> => {
     e.preventDefault();
-    await register(email, password, confirmPassword);
+    await register(username, email, password);
+    navigate("/registrationConfirmation");
 
-    navigate("/RegistrationConfirmation");
   };
   return (
     <div className="containerRegistration">

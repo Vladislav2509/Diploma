@@ -8,7 +8,7 @@ export function RegistrationConfirmation({email}: {email: string}) {
   return (
     <div className='containerConfirmation'>
         <div className='link'>
-            <Link to="/backToHome">Back to home</Link>
+            <Link className='linkConfirmation' to="/backToHome">Back to home</Link>
         </div>
 
         <div className='textRegistrationConfirmation'>

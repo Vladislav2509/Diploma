@@ -30,11 +30,11 @@ export const Sidebar = (props: InputProps) => {
             <Link className='linkListSidebar' to="/home">{home}</Link>
           </li>
           <li>
-            <img src={films} alt="#" />
+            <img className='iconsSidebar' src={films} alt="#" />
             <Link className='linkListSidebar' to="/all_films">{all_films}</Link>
           </li>
           <li>
-            <img src={favourite} alt="#" />
+            <img className='iconsSidebar' src={favourite} alt="#" />
             <Link className='linkListSidebar' to="/favourite_Movies">{favorites_movies}</Link>
           </li>
         </ul>

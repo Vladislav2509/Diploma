@@ -1,43 +1,13 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import axios, { AxiosResponse } from "axios";
+import { APIError, APIstatus } from "../types/apiTypes";
 import { Post } from '../types/posts.types'
-export enum APIstatus {
-  IDLE,
-  PENDING,
-  REJECTED,
-  FULFILLED,
-}
-
-export type APIError = { message: string; code: number };
-
-export type APIData<DataType = any> = {
-  status: string;
-  error?: APIError;
-  data?: DataType;
-};
-
-export const internalError = {
-  message: "Internal Error",
-  code: -500,
-};
-
-export const onFulfilledRequest = (response: AxiosResponse) => response;
-export const onRejectedResponse = () => Promise.reject(internalError);
+import { getExceptionPayload, publicRequest } from "./actions";
 
 
-// =================================================================
-
-export const movieRequest = axios.create({
-  baseURL: "http://www.omdbapi.com/",
-});
-
-
-movieRequest.interceptors.response.use(onFulfilledRequest, onRejectedResponse);
 
 export type Response = { results: Post[] };
 
 const DEFAULT_SEARCH_QUERY = 'sport';
-
 
 export const getMoviePosts = createAsyncThunk<
   any,
@@ -47,7 +17,7 @@ export const getMoviePosts = createAsyncThunk<
   "getMoviePosts",
   async (searchQuery, { rejectWithValue }) => {
     try {
-      const response = await movieRequest.get
+      const response = await publicRequest.get
         <Response>
         ("", {
           params: {
@@ -65,8 +35,8 @@ export const getMoviePosts = createAsyncThunk<
   }
 );
 
-// =================================================
 
+// DetailsMovie
 export const getMovieData = createAsyncThunk<
   any,
   string,
@@ -75,7 +45,7 @@ export const getMovieData = createAsyncThunk<
   "getMovieData",
   async (i, { rejectWithValue }) => {
     try {
-      const response = await movieRequest.get
+      const response = await publicRequest.get
         <Response>
         ("", {
           params: {
@@ -92,28 +62,14 @@ export const getMovieData = createAsyncThunk<
   }
 );
 
-// =================================================================
-
 export const initialState = {
   fetchPosts: { status: APIstatus.IDLE },
 };
 
-export const getExceptionPayload = (ex: unknown): APIError => {
-  if (typeof ex !== "object" || !ex) {
-    return internalError;
-  }
 
-  const typeException = ex as APIError;
-  if (
-    ex.hasOwnProperty("message") &&
-    typeof typeException.message === "string" &&
-    ex.hasOwnProperty("code") &&
-    typeof typeException.code === "number"
-  ) {
-    return {
-      message: typeException.message,
-      code: typeException.code,
-    };
-  }
-  return internalError;
-};
+
+
+
+
+
+

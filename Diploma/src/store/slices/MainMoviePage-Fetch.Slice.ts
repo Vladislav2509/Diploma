@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-import { APIstatus, getMovieData, getMoviePosts } from "../../api/fetchMoviePosts";
+import { getMovieData, getMoviePosts } from "../../api/fetchMoviePosts";
+import { APIstatus } from "../../types/apiTypes";
 
 
 
