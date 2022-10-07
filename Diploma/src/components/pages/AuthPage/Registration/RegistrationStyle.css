@@ -1,0 +1,62 @@
+.registrationContainer {
+  margin: auto;
+  padding: 0 16px 0 16px;
+  display: flex;
+  width: 100%;
+}
+
+.registrationWrapper {
+  margin: 100px auto;
+  width: 33%;
+  border-radius: 4px;
+  background-color: #7b61ff;
+}
+
+.registrationNavigation2 {
+  margin: 40px 0 40px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.loginTitleButton2 {
+  width: 200px;
+  text-align: center;
+  background-color: #7b61ff;
+  border: none;
+  font-size: 24px;
+  color: gainsboro;
+  cursor: pointer;
+}
+
+.registrationTitleButton2 {
+  width: 200px;
+  text-align: center;
+  background-color: #7b61ff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.registrFormContainer {
+  padding: 18px;
+  background-color: #fff;
+  border-radius: 4px;
+  background-color: gainsboro;
+  opacity: 0.9;
+}
+
+.wrapperLablesInputs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.submitRegistration {
+  width: 100%;
+  background-color: #7b61ff;
+  border-radius: 2px;
+  padding: 18px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}

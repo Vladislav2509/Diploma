@@ -1,0 +1,73 @@
+.loginContainer {
+  width: 100%;
+  margin: auto;
+  padding: 0 16px 0 16px;
+  display: flex;
+}
+
+.loginWrapper {
+  margin: 100px auto 0 auto;
+  width: 33%;
+  border-radius: 4px;
+  background-color: #7b61ff;
+}
+
+.registrationNavigation {
+  display: flex;
+  margin: 40px 0 40px 0;
+  justify-content: space-evenly;
+}
+
+.loginTitleButton {
+  width: 200px;
+  text-align: center;
+  background-color: #7b61ff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.registrationTitleButton {
+  width: 200px;
+  text-align: center;
+  background-color: #7b61ff;
+  border: none;
+  font-size: 24px;
+  color: gainsboro;
+  cursor: pointer;
+}
+
+form {
+  padding: 18px;
+  background-color: #fff;
+  filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04))
+    drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  border-radius: 4px;
+  background-color: gainsboro;
+  opacity: 0.9;
+}
+
+.emailPasswordWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 18px;
+}
+
+.forgotPasswordWrapper {
+  margin-bottom: 40px;
+}
+
+.forgotPasswordButton {
+  background-color: transparent;
+  border: none;
+  text-decoration-line: underline;
+  cursor: pointer;
+}

@@ -1,289 +1,254 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.headerNavBar {
-    width: 100%;
-    height: 60px;
-    z-index: 1;
-    position: fixed;
-    display: grid;
-    grid-template-columns: 1fr auto auto auto auto auto;
-    background-color: #3b2f75;
-    opacity: 0.9;
+.navBarContainer {
+  width: 100%;
+  height: 60px;
+  z-index: 1;
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr auto auto auto auto auto auto;
+  background-color: #7b61ff;
+  opacity: 0.9;
 }
 
-.burgerAndUserNameNavBar {
-    display: flex;
-    align-items: center;
+.burger__UserName {
+  display: flex;
+  align-items: center;
 }
 
-.burgerImgNavBar {
-    width: 60px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: 1px solid;
-    cursor: pointer;
+.wrapperBurgerIcon {
+  width: 60px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid;
+  cursor: pointer;
 }
 
-.burgerNavBar:hover:active {
-    background-color: rgb(255, 255, 255, 0.1);
-}
-
-.userEmailNavBar {
-    margin-left: 40px;
-}
-
-.userTitleEmailNavBar {
-    font-size: 21px;
-    color: #fff;
-}
-
-/* DetailedSearch */
-/* ================================= */
-.imgDetailedSearch {
-    width: 60px;
-    height: 100%;
-    border-left: 1px solid;
-    border-right: 1px solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-/* ================================= */
-
-.userNavBar {
-    width: 60px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-left: 1px solid;
-    cursor: pointer;
-}
-
-.userNavBar:hover:active {
-    background-color: rgb(255, 255, 255, 0.1);
+.wrapperBurgerIcon:hover:active {
+  background-color: rgb(255, 255, 255, 0.1);
 }
 
 .headerIcon {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
-.logoutNavBar {
-    width: 60px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-left: 1px solid;
-    cursor: pointer;
+.wrapperTitleUser {
+  margin-left: 40px;
 }
 
-.logoutNavBar:hover:active {
-    background-color: rgb(255, 255, 255, 0.1);
+.changeUserTitle {
+  font-size: 21px;
+  color: #fff;
 }
 
+.wrapperDetailedSearchIcon {
+  width: 60px;
+  height: 100%;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.wrapperUserIcon {
+  width: 60px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid;
+  cursor: pointer;
+}
+
+.wrapperUserIcon:hover:active {
+  background-color: rgb(255, 255, 255, 0.1);
+}
+
+.wrapperLogoutIcon {
+  width: 60px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid;
+  cursor: pointer;
+}
+
+.wrapperLogoutIcon:hover:active {
+  background-color: rgb(255, 255, 255, 0.1);
+}
 
 @media screen and (max-width: 1200px) {
-    * {
-        box-sizing: border-box;
-    }
+  * {
+    box-sizing: border-box;
+  }
 
-    .headerNavBar {
-        width: 100%;
-        height: 45px;
-    }
+  .navBarContainer {
+    width: 100%;
+    height: 45px;
+  }
 
-    .burgerImgNavBar {
-        width: 45px;
-        height: 100%;
-    }
+  .wrapperBurgerIcon {
+    width: 45px;
+    height: 100%;
+  }
 
+  .wrapperTitleUser {
+    margin-left: 30px;
+  }
 
-    .userEmailNavBar {
-        margin-left: 30px;
-    }
+  .changeUserTitle {
+    font-size: 17px;
+    color: #fff;
+  }
 
-    .userTitleEmailNavBar {
-        font-size: 14px;
-        color: #fff;
-    }
+  .wrapperDetailedSearchIcon {
+    width: 45px;
+  }
 
-    /* DetailedSearch */
-    /* ================================= */
-    .imgDetailedSearch {
-        width: 45px;
-    }
+  .wrapperUserIcon {
+    width: 45px;
+  }
 
-    /* ================================= */
+  .headerIcon {
+    width: 17px;
+    height: 17px;
+  }
 
-    .userNavBar {
-        width: 45px;
-    }
-
-
-    .headerIcon {
-        width: 17px;
-        height: 17px;
-    }
-
-    .logoutNavBar {
-        width: 45px;
-    }
-
-
-
+  .wrapperLogoutIcon {
+    width: 45px;
+  }
 }
 
 @media screen and (max-width: 992px) {
-    * {
-        box-sizing: border-box;
-    }
+  * {
+    box-sizing: border-box;
+  }
 
-    .headerNavBar {
-        width: 100%;
-        height: 35px;
-    }
+  .navBarContainer {
+    width: 100%;
+    height: 35px;
+  }
 
-    .burgerImgNavBar {
-        width: 35px;
-        height: 100%;
-    }
+  .wrapperBurgerIcon {
+    width: 35px;
+    height: 100%;
+  }
 
+  .wrapperTitleUser {
+    margin-left: 25px;
+  }
 
-    .userEmailNavBar {
-        margin-left: 25px;
-    }
+  .changeUserTitle {
+    font-size: 14px;
+    color: #fff;
+  }
 
-    .userTitleEmailNavBar {
-        font-size: 12px;
-        color: #fff;
-    }
+  .wrapperDetailedSearchIcon {
+    width: 35px;
+  }
 
-    /* DetailedSearch */
-    /* ================================= */
-    .imgDetailedSearch {
-        width: 35px;
+  .wrapperUserIcon {
+    width: 35px;
+  }
 
-    }
+  .headerIcon {
+    width: 13px;
+    height: 13px;
+  }
 
-    /* ================================= */
-
-    .userNavBar {
-        width: 35px;
-    }
-
-
-    .headerIcon {
-        width: 13px;
-        height: 13px;
-    }
-
-    .logoutNavBar {
-        width: 35px;
-    }
-
-
-
+  .wrapperLogoutIcon {
+    width: 35px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    * {
-        box-sizing: border-box;
-    }
+  * {
+    box-sizing: border-box;
+  }
 
-    .headerNavBar {
-        width: 100%;
-        height: 25px;
-    }
+  .navBarContainer {
+    width: 100%;
+    height: 25px;
+  }
 
-    .burgerImgNavBar {
-        width: 25px;
-        height: 100%;
-        border-right: 0.1px solid;
-    }
+  .wrapperBurgerIcon {
+    width: 25px;
+    height: 100%;
+  }
 
+  .wrapperTitleUser {
+    margin-left: 18px;
+  }
 
-    .userEmailNavBar {
-        margin-left: 18px;
-    }
+  .changeUserTitle {
+    font-size: 10px;
+    color: #fff;
+  }
 
-    .userTitleEmailNavBar {
-        font-size: 8px;
-        color: #fff;
-    }
+  .wrapperDetailedSearchIcon {
+    width: 25px;
+  }
 
-    /* DetailedSearch */
-    /* ================================= */
-    .imgDetailedSearch {
-        width: 25px;
-    }
+  .wrapperUserIcon {
+    width: 25px;
+  }
 
-    /* ================================= */
+  .headerIcon {
+    width: 9px;
+    height: 9px;
+  }
 
-    .userNavBar {
-        width: 25px;
-    }
-
-
-    .headerIcon {
-        width: 9px;
-        height: 9px;
-    }
-
-    .logoutNavBar {
-        width: 25px;
-    }
+  .wrapperLogoutIcon {
+    width: 25px;
+  }
 }
 
 @media screen and (max-width: 576px) {
-    * {
-        box-sizing: border-box;
-    }
+  * {
+    box-sizing: border-box;
+  }
 
-    .headerNavBar {
-        width: 100%;
-        height: 20px;
-    }
+  .navBarContainer {
+    width: 100%;
+    height: 20px;
+  }
 
-    .burgerImgNavBar {
-        width: 20px;
-        height: 100%;
-        border-right: 0.1px solid;
-    }
+  .wrapperBurgerIcon {
+    width: 20px;
+    height: 100%;
+  }
 
-    .userEmailNavBar {
-        margin-left: 18px;
-    }
+  .wrapperTitleUser {
+    margin-left: 18px;
+  }
 
-    .userTitleEmailNavBar {
-        font-size: 6px;
-        color: #fff;
-    }
+  .changeUserTitle {
+    font-size: 8px;
+    color: #fff;
+  }
 
-    /* DetailedSearch */
-    /* ================================= */
-    .imgDetailedSearch {
-        width: 20px;
-    }
-    /* ================================= */
+  .wrapperDetailedSearchIcon {
+    width: 20px;
+  }
 
-    .userNavBar {
-        width: 20px;
-    }
+  .wrapperUserIcon {
+    width: 20px;
+  }
 
-    .headerIcon {
-        width: 7px;
-        height: 7px;
-    }
+  .headerIcon {
+    width: 7px;
+    height: 7px;
+  }
 
-    .logoutNavBar {
-        width: 20px;
-    }
+  .wrapperLogoutIcon {
+    width: 20px;
+  }
 }

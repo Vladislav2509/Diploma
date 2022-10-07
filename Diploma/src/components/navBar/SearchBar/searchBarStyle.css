@@ -1,112 +1,107 @@
 .formSearchNavBar {
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #3b2f75;
-    opacity: 0.9;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7b61ff;
+  opacity: 0.9;
 }
 
 .inputSearch {
-    width: 350px;
-    padding: 10px;
-    margin-right: 50px;
-    border-radius: 25px;
-
+  width: 350px;
+  padding: 10px;
+  margin-right: 50px;
+  border-radius: 25px;
 }
 
 .buttonSearch {
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    right: 0;
-    border: none;
-    border-left: 1px solid;
-    cursor: pointer;
-    background-color: #3b2f75;
-    opacity: 0.9;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 0;
+  border: none;
+  border-left: 1px solid;
+  cursor: pointer;
+  background-color: #7b61ff;
+  opacity: 0.9;
 }
 
 @media screen and (max-width: 1200px) {
-    .formSearchNavBar {
-        height: 45px; 
-    }
-    
-    .inputSearch {
-        width: 250px;
-        padding: 12px;
-        height: 20px;
-        margin-right: 50px;
-        border-radius: 25px;
-    
-    }
-    
-    .buttonSearch {
-        width: 45px;
-        height: 100%;
-    }
+  .formSearchNavBar {
+    height: 45px;
+  }
+
+  .inputSearch {
+    width: 250px;
+    padding: 12px;
+    height: 20px;
+    margin-right: 50px;
+    border-radius: 25px;
+  }
+
+  .buttonSearch {
+    width: 45px;
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 992px) {
-    .formSearchNavBar {
-        height: 35px; 
-    }
-    
-    .inputSearch {
-        width: 200px;
-        padding: 10px;
-        height: 20px;
-        margin-right: 30px;
-        border-radius: 25px;
-    
-    }
-    
-    .buttonSearch {
-        width: 35px;
-        height: 100%;
-    }
+  .formSearchNavBar {
+    height: 35px;
+  }
+
+  .inputSearch {
+    width: 200px;
+    padding: 10px;
+    height: 20px;
+    margin-right: 30px;
+    border-radius: 25px;
+  }
+
+  .buttonSearch {
+    width: 35px;
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .formSearchNavBar {
-        height: 25px;
-        padding: 5px;
-    }
-    
-    .inputSearch {
-        width: 110px;
-        padding: 7px;
-        height: 10px;
-        margin-right: 25px;
-        border-radius: 25px;
-        font-size: 8px;
-    
-    }
-    
-    .buttonSearch {
-        width: 25px;
-        height: 100%;
-    }
+  .formSearchNavBar {
+    height: 25px;
+    padding: 5px;
+  }
+
+  .inputSearch {
+    width: 110px;
+    padding: 7px;
+    height: 10px;
+    margin-right: 25px;
+    border-radius: 25px;
+    font-size: 8px;
+  }
+
+  .buttonSearch {
+    width: 25px;
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 576px) {
-    .formSearchNavBar {
-        height: 20px;
-        padding: 5px;
-    }
-    
-    .inputSearch {
-        width: 100px;
-        padding: 4px;
-        height: 10px;
-        margin-right: 20px;
-        border-radius: 25px;
-        font-size: 7px;
-    
-    }
-    
-    .buttonSearch {
-        width: 20px;
-        height: 100%;
-    }
+  .formSearchNavBar {
+    height: 20px;
+    padding: 5px;
+  }
+
+  .inputSearch {
+    width: 100px;
+    padding: 4px;
+    height: 10px;
+    margin-right: 20px;
+    border-radius: 25px;
+    font-size: 7px;
+  }
+
+  .buttonSearch {
+    width: 20px;
+    height: 100%;
+  }
 }

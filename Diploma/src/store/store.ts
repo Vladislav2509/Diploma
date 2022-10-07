@@ -1,26 +1,18 @@
-import { useDispatch } from 'react-redux';
-import { configureStore } from '@reduxjs/toolkit';
+import { useDispatch } from "react-redux";
+import { configureStore } from "@reduxjs/toolkit";
 
-import { postsReducer } from './slices/MainMoviePage-Fetch.Slice';
+import { postsReducer } from "./slices/moviePosts.Slice";
 import { favoritesReducer } from "./slices/favorites.slice";
 
 import counterReducer from "./slices/counterSlice";
 
-
-
-
 export const store = configureStore({
-    reducer: {
-
-        counter: counterReducer,
-        postsMovie: postsReducer,
-
-        favorites: favoritesReducer,
-        
-
-    }
+  reducer: {
+    counter: counterReducer,
+    moviePosts: postsReducer,
+    favorites: favoritesReducer,
+  },
 });
-
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;

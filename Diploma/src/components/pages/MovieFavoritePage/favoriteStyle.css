@@ -1,0 +1,14 @@
+.containeFavoriteMoviesr {
+  width: 100%;
+  height: 1000px;
+  margin: auto;
+  position: absolute;
+}
+
+.contentFavoriteMovies {
+  width: 1200px;
+  height: 1000px;
+  margin: auto;
+  margin-top: 100px;
+  color: white;
+}

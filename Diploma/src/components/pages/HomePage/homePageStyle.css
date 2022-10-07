@@ -1,26 +1,18 @@
 body {
   background-color: black;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url(../../../images/spider.jpg) no-repeat;
+  background: url(../../../assets/icons/spider.jpg) no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
 }
 
-.containerHomePage {
-  width: 100%;
-  margin: auto;
-  background-size: cover;
-  background-position: center;
-}
-
-/* blok_two */
-.blokHomePage {
+.homePageContainer {
   margin: auto;
   display: flex;
   justify-content: center;
@@ -32,7 +24,7 @@ body {
   margin-top: 60px;
 }
 
-.contentHomePage {
+.homePageContent {
   width: 1200px;
   margin: auto;
   margin-top: 70px;
@@ -51,7 +43,7 @@ body {
 .textPix {
   font-size: 50px;
   font-weight: 600;
-  color: #7B61FF;
+  color: #7b61ff;
 }
 
 .textEma {
@@ -64,7 +56,7 @@ body {
   display: flex;
   margin-top: 10px;
   margin-bottom: 150px;
-  color:  #0000FF;
+  color: #0000ff;
 }
 
 .previewAndButton {
@@ -78,7 +70,7 @@ body {
   margin-left: 70px;
   font-weight: 500;
   font-size: 25px;
-  transition: .7s;
+  transition: 0.7s;
 }
 
 .buttonLearnMore {
@@ -92,28 +84,28 @@ body {
   border: none;
   background-color: blue;
   color: white;
-  transition: .7s;
+  transition: 0.7s;
 }
 
 .buttonLearnMore:hover {
-  background-color: #7B61FF;
+  background-color: #7b61ff;
   color: black;
 }
 
-.allInformationPixema {
+.fullDescription {
   width: 500px;
   height: 230px;
-  margin-left: 20px;
+  margin-left: 80px;
   font-size: 25px;
   font-weight: 500;
 }
 
-.buttonHomePage {
+.buttonWrapper {
   display: flex;
   justify-content: center;
 }
 
-.buttonLetsGetStarted {
+.buttonMoviesInformathion {
   width: 200px;
   height: 50px;
   margin-top: 20px;
@@ -123,22 +115,19 @@ body {
   border: none;
   background-color: blue;
   color: white;
-  transition: .7s;
+  transition: 0.7s;
 }
 
 .buttonLetsGetStarted:hover {
-  background-color: #7B61FF;
+  background-color: #7b61ff;
   color: black;
 }
 
-
-
 @media screen and (max-width: 1200px) {
-  
-  .contentHomePage {
+  .homePageContent {
     width: 850px;
   }
-  
+
   .textWelcome {
     width: 150px;
     height: 100px;
@@ -146,24 +135,24 @@ body {
     margin-left: 70px;
     font-size: 27px;
   }
-  
+
   .textPix {
     font-size: 42px;
     font-weight: 600;
   }
-  
+
   .textEma {
     font-size: 42px;
     font-weight: 600;
   }
-  
+
   .pixemaWrapper {
     display: flex;
     margin-top: 10px;
     margin-bottom: 270px;
-    color:  #0000FF;
+    color: #0000ff;
   }
-  
+
   .previewPixema {
     width: 280px;
     height: 215px;
@@ -171,7 +160,7 @@ body {
     font-weight: 500;
     font-size: 23px;
   }
-  
+
   .buttonLearnMore {
     width: 170px;
     height: 45px;
@@ -179,20 +168,20 @@ body {
     margin-left: 70px;
     font-size: 20px;
   }
-  
+
   .buttonLearnMore:hover {
-    background-color: #7B61FF;
+    background-color: #7b61ff;
     color: black;
   }
-  
-  .allInformationPixema {
+
+  .pixemaDescription {
     width: 450px;
     height: 215px;
     margin-left: 20px;
     font-size: 23px;
     font-weight: 500;
   }
-  
+
   .buttonLetsGetStarted {
     width: 170px;
     height: 45px;
@@ -202,17 +191,15 @@ body {
     border: none;
     background-color: blue;
     color: white;
-    transition: .7s;
+    transition: 0.7s;
   }
-
 }
 
 @media screen and (max-width: 992px) {
-
-  .contentHomePage {
+  .homePageContent {
     width: 650px;
   }
-  
+
   .textWelcome {
     width: 130px;
     height: 80px;
@@ -220,23 +207,23 @@ body {
     margin-left: 55px;
     font-size: 24px;
   }
-  
+
   .textPix {
     font-size: 40px;
     font-weight: 600;
   }
-  
+
   .textEma {
     font-size: 40px;
     font-weight: 600;
   }
-  
+
   .pixemaWrapper {
     display: flex;
     margin-top: 15px;
     margin-bottom: 100px;
   }
-  
+
   .previewPixema {
     width: 260px;
     height: 200px;
@@ -244,7 +231,7 @@ body {
     font-weight: 500;
     font-size: 20px;
   }
-  
+
   .buttonLearnMore {
     width: 160px;
     height: 40px;
@@ -252,16 +239,15 @@ body {
     margin-left: 55px;
     font-size: 18px;
   }
-  
-  
-  .allInformationPixema {
+
+  .pixemaDescription {
     width: 280px;
     height: 200px;
     margin-left: 20px;
     font-size: 17.1px;
     font-weight: 500;
   }
-  
+
   .buttonLetsGetStarted {
     width: 160px;
     height: 40px;
@@ -271,16 +257,15 @@ body {
     border: none;
     background-color: blue;
     color: white;
-    transition: .7s;
+    transition: 0.7s;
   }
 }
 
 @media screen and (max-width: 768px) {
-
-  .contentHomePage {
+  .homePageContent {
     width: 490px;
   }
-  
+
   .textWelcome {
     width: 120px;
     height: 70px;
@@ -288,21 +273,21 @@ body {
     margin-left: 50px;
     font-size: 22px;
   }
-  
+
   .textPix {
     font-size: 35px;
   }
-  
+
   .textEma {
     font-size: 35px;
   }
-  
+
   .pixemaWrapper {
     display: flex;
     margin-top: 15px;
     margin-bottom: 100px;
   }
-  
+
   .previewPixema {
     width: 210px;
     height: 180px;
@@ -310,7 +295,7 @@ body {
     font-weight: 500;
     font-size: 13px;
   }
-  
+
   .buttonLearnMore {
     width: 140px;
     height: 35px;
@@ -318,30 +303,27 @@ body {
     margin-left: 50px;
     font-size: 16px;
   }
-  
-  
-  .allInformationPixema {
+
+  .pixemaDescription {
     width: 180px;
     height: 180px;
     margin-left: 20px;
     font-size: 13px;
     font-weight: 500;
   }
-  
+
   .buttonLetsGetStarted {
     width: 140px;
     height: 35px;
     font-size: 16px;
   }
-
 }
 
 @media screen and (max-width: 576px) {
-  
-  .contentHomePage {
+  .homePageContent {
     width: 300px;
   }
-  
+
   .textWelcome {
     width: 85px;
     height: 55px;
@@ -349,21 +331,21 @@ body {
     margin-left: 20px;
     font-size: 16px;
   }
-  
+
   .textPix {
     font-size: 26px;
   }
-  
+
   .textEma {
     font-size: 26px;
   }
-  
+
   .pixemaWrapper {
     display: flex;
     margin-top: 15px;
     margin-bottom: 90px;
   }
-  
+
   .previewPixema {
     width: 120px;
     height: 105px;
@@ -371,7 +353,7 @@ body {
     font-weight: 500;
     font-size: 8px;
   }
-  
+
   .buttonLearnMore {
     width: 85px;
     height: 30px;
@@ -379,22 +361,18 @@ body {
     margin-left: 30px;
     font-size: 10px;
   }
-  
-  
-  .allInformationPixema {
+
+  .pixemaDescription {
     width: 120px;
     height: 105px;
     margin-left: 15px;
     font-size: 8px;
     font-weight: 500;
   }
-  
+
   .buttonLetsGetStarted {
     width: 85px;
     height: 30px;
     font-size: 10px;
   }
-
 }
-
-

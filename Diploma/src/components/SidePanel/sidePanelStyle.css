@@ -1,0 +1,151 @@
+.sidePanelContainer {
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  margin-top: 60px;
+  background-color: #2f4050;
+}
+
+.titleSidePanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textMenuSidePanel {
+  color: #7b61ff;
+}
+
+.titleSpanSidePanel {
+  color: white;
+}
+
+.listSidePanel {
+  margin-left: -20px;
+}
+
+.linkListSidePanel {
+  font-weight: 700;
+  font-size: 20px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  color: #7b61ff;
+}
+
+li {
+  list-style: none;
+  margin: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .sidePanelContainer {
+    width: 20%;
+    margin-top: 45px;
+  }
+
+  .listSidePanel {
+    margin-left: -25px;
+  }
+
+  .iconsSidePanel {
+    width: 29px;
+    height: 29px;
+  }
+
+  .linkListSidePanel {
+    font-weight: 600;
+    font-size: 17px;
+    margin-left: 10px;
+  }
+
+  li {
+    list-style: none;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sidePanelContainer {
+    width: 22%;
+    margin-top: 35px;
+  }
+
+  .textMenuSidebar {
+    font-size: 30px;
+  }
+
+  .listSidePanel {
+    margin-left: -35px;
+  }
+
+  .iconsSidePanel {
+    width: 25px;
+    height: 25px;
+  }
+
+  .linkListSidePanel {
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  li {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidePanelContainer {
+    width: 25%;
+    margin-top: 25px;
+  }
+
+  .textMenuSidebar {
+    font-size: 27px;
+  }
+
+  .listSidePanel {
+    margin-left: -45px;
+  }
+
+  .iconsSidePanel {
+    width: 20px;
+    height: 20px;
+  }
+
+  .linkListSidePanel {
+    font-weight: 600;
+    font-size: 10px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sidePanelContainer {
+    width: 25%;
+    margin-top: 20px;
+  }
+
+  .textMenuSidebar {
+    font-size: 18px;
+  }
+
+  .listSidePanel {
+    margin-left: -53px;
+  }
+
+  .iconsSidePanel {
+    width: 11px;
+    height: 11px;
+  }
+
+  .linkListSidePanel {
+    font-weight: 700;
+    font-size: 8px;
+    margin-left: 10px;
+  }
+}

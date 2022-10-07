@@ -1,68 +1,62 @@
 .detailedSearch {
-    position: fixed;
-    right: 0;
-    margin-top: 60px;
-    width: 40%;
-    height: 100%;
-    background-color: #2F4050;
+  position: fixed;
+  right: 0;
+  margin-top: 60px;
+  width: 40%;
+  height: 100%;
+  background-color: #2f4050;
 }
 
 .textFilters {
-    display: flex;
-    align-items: center;
-    width: 440px;
-    height: 36px;
-    margin-top: 20px;
-    /* margin-left: 100px; */
-    font-weight: 600;
-    font-size: 21px;
-
-    color: #FFFFFF;
-    /* background-color: red; */
+  display: flex;
+  align-items: center;
+  width: 440px;
+  height: 36px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 21px;
+  color: #ffffff;
 }
 
 .ratingYear {
-    width: 440px;
-    height: 150px;
-    margin-top: 20px;
-    margin-left: 100px;
-    /* background-color: red; */
-    
+  width: 440px;
+  height: 150px;
+  margin-top: 20px;
+  margin-left: 100px;
 }
 
 .textSortby {
-    font-weight: 500;
-    font-size: 18px;
-    color: #FFFFFF;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
 }
 
-
 .buttonRatingYear {
-    width: 150px;
-    height: 40px;
-    font-size: 21px;
-    background-color: #242426;
-    color: #FFFFFF;
+  width: 150px;
+  height: 40px;
+  font-size: 21px;
+  background-color: #242426;
+  color: #ffffff;
 }
 
 .textMovieName {
-    font-weight: 600;
-    font-size: 18px;
-    color: #FFFFFF;
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
 }
 
 .searchBarImport {
-    margin-left: -100px;
+  margin-left: -100px;
 }
 
 .formSearch {
-    display: flex;
-    justify-content: center;
-    background-color: #242426;
+  display: flex;
+  justify-content: center;
+  background-color: #242426;
 }
 
 .inputDetailedSearch {
-    width: 400px;
-    height: 30px;
-    margin-right: 50px; 
+  width: 400px;
+  height: 30px;
+  margin-right: 50px;
 }

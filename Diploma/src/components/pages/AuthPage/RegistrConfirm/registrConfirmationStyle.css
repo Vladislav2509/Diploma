@@ -1,0 +1,42 @@
+.containerConfirmation {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 80px;
+}
+
+.linkConfirmation {
+  width: 100%;
+  max-width: 620px;
+  height: 40px;
+  margin-top: 50px;
+  text-decoration: none;
+  align-items: center;
+  color: white;
+}
+
+.textRegistrationConfirmation {
+  width: 100%;
+  max-width: 800px;
+  height: 150px;
+  align-items: center;
+  font-size: 25px;
+  color: white;
+}
+
+.successfullyCreated {
+  margin: auto;
+  margin-top: 50px;
+  width: 100%;
+  max-width: 620px;
+  height: 200px;
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.checkEmail {
+  margin-top: 50px;
+}
