@@ -6,7 +6,7 @@ export const getMovieDetails = createAsyncThunk<
   any,
   string,
   { rejectValue: APIError }
->("getMovieData", async (i, { rejectWithValue }) => {
+>("getMovieDetails", async (i, { rejectWithValue }) => {
   try {
     const response = await publicRequest.get<Response>("", {
       params: {

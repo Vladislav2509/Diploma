@@ -8,7 +8,6 @@ import { MovieCardsPage } from "../MovieCardsPage/MovieCards";
 import { Footer } from "../../Footer/Footer";
 import GridLoader from "react-spinners/GridLoader";
 import "./moviePageStyle.css";
-import { PaginationBlock } from "../../Pagination/Pagination";
 
 
 export function MainMoviePage() {
@@ -86,7 +85,6 @@ export function MainMoviePage() {
               )}
             </div>
 
-            <PaginationBlock />
             <Footer />
 
           </>
