@@ -1,16 +1,14 @@
 import { useDispatch } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
-
 import { postsReducer } from "./slices/moviePosts.Slice";
 import { favoritesReducer } from "./slices/favorites.slice";
-
-import counterReducer from "./slices/counterSlice";
+import counterReducer from "./slices/counter.slice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
     moviePosts: postsReducer,
     favorites: favoritesReducer,
+    counter: counterReducer,
   },
 });
 

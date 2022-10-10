@@ -2,7 +2,7 @@ import './buttonAuthStyle.css';
 
 export function Button() {
     return (
-        <button className="btnAuth">
+        <button className="btnAuth" >
             Send
         </button>
     )

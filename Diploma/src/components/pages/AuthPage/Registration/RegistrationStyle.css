@@ -50,13 +50,3 @@
   flex-direction: column;
   margin-bottom: 40px;
 }
-
-.submitRegistration {
-  width: 100%;
-  background-color: #7b61ff;
-  border-radius: 2px;
-  padding: 18px;
-  font-size: 18px;
-  color: #fff;
-  cursor: pointer;
-}

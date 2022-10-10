@@ -8,6 +8,7 @@ import { MovieCardsPage } from "../MovieCardsPage/MovieCards";
 import { Footer } from "../../Footer/Footer";
 import GridLoader from "react-spinners/GridLoader";
 import "./moviePageStyle.css";
+import { PaginationBlock } from "../../Pagination/Pagination";
 
 
 export function MainMoviePage() {
@@ -54,6 +55,9 @@ export function MainMoviePage() {
               </h1>
             </div>
 
+
+
+
             <div className="wrapperPostFetch">
               {postsOnPage &&
                 postsOnPage.map((result: any): JSX.Element => {
@@ -81,7 +85,10 @@ export function MainMoviePage() {
 
               )}
             </div>
+
+            <PaginationBlock />
             <Footer />
+
           </>
         )}
       </div>
