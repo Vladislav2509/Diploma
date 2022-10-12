@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import { useAuth } from "../../hooks/useAuth";
 
-import { DetailedSearch } from "./SearchBar/DetailedSearch/DetailedSearch";
-import { SearchBar } from "./SearchBar/SearchBar";
+import { DetailedSearch } from "../Search/DetailedSearch/DetailedSearch";
+import { SearchBar } from "../Search/SearchBar";
 import { SidePanel } from "../SidePanel/SidePanel";
 
 import iconBurger from "../../assets/icons/burger.svg";

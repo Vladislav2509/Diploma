@@ -18,7 +18,7 @@ export const SidePanel = (props: SidePanelProps) => {
     <div className="sidePanelContainer">
       <div className="titleSidePanel">
         <h1 className="textMenuSidePanel">
-          Me<span className="titleSpanSidePanel">nu</span>
+          Me<span className="textWrapTitle">nu</span>
         </h1>
       </div>
 

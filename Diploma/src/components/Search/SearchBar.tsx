@@ -1,7 +1,5 @@
 import { useSearchParams } from "react-router-dom";
-
-import iconSearch from "../../../assets/icons/search.svg";
-
+import iconSearch from "../../assets/icons/search.svg";
 import "./searchBarStyle.css";
 
 export function SearchBar() {
