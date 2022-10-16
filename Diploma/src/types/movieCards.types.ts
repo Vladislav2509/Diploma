@@ -1,12 +1,4 @@
-export interface ICard {
-  id: number;
-  image?: string;
-  lesson_num: number;
-  title: string;
-  author: number;
-}
-
-export interface MovieCardsProps {
+export interface MovieCardsTypes {
   id: string;
   image?: string;
   title: string;

@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { MovieCardsProps } from "../../../types/movieCards.types";
+import { MovieCardsTypes } from "../../../types/movieCards.types";
 import iconbookmark from "../../../assets/icons/bookmark.svg";
 import "./movieCardsStyle.css";
 
 
-export const MovieCardsPage = ({ id, image, title, year }: MovieCardsProps) => {
+export const MovieCardsPage = ({ id, image, title, year }: MovieCardsTypes) => {
   const { } = useSelector((state: any) => state.moviePosts.postData);
 
   return (
