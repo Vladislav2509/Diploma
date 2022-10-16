@@ -1,24 +1,22 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getMoviePosts } from "../../api/getMoviePosts";
-import { getMovieDetails } from "../../api/getMovieDetails";
 import { APIstatus } from "../../types/api.types";
+import { moviePostsAction } from "./moviePosts.actions";
 
 const initialState: any = {
   postsStatus: { status: APIstatus.IDLE },
   postData: [],
-  currentPost: null,
 };
 
 export const fetchPostsSlice = createSlice({
-  name: "Fetch Posts",
+  name: "Movie Posts",
   initialState: initialState,
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(getMoviePosts.pending, (state) => {
+      .addCase(moviePostsAction.pending, (state) => {
         state.postsStatus.status = APIstatus.PENDING;
       })
-      .addCase(getMoviePosts.fulfilled, (state, action) => {
+      .addCase(moviePostsAction.fulfilled, (state, action) => {
         state.postsStatus.status = APIstatus.FULFILLED;
         if (action.payload.Response === "True") {
           state.postData = action.payload.Search;
@@ -26,11 +24,8 @@ export const fetchPostsSlice = createSlice({
           state.postData = [];
         }
       })
-      .addCase(getMoviePosts.rejected, (state) => {
+      .addCase(moviePostsAction.rejected, (state) => {
         state.postsStatus.status = APIstatus.REJECTED;
-      })
-      .addCase(getMovieDetails.fulfilled, (state, action) => {
-        state.currentPost = action.payload;
       });
   },
 });

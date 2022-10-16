@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { ProtectedRoute } from "./components/ProtectedRoute/ProtectedRoute";
 import { NavBar } from "./components/NavBar/NavBar";
-import { MainMoviePage } from "./components/pages/MovieMainPage/MoviePage";
+import { PostsMoviePage } from "./components/pages/MoviePostsPage/MoviePage";
 import { MovieDetailsPage } from "./components/pages/MovieDetailsPage/Details";
 import { FavoritePage } from "./components/pages/MovieFavoritePage/Favorite";
 import { HomePage } from "./components/pages/HomePage/HomePage";
@@ -21,7 +21,7 @@ export const App = () => {
                     path="/all_films"
                     element={
                         <ProtectedRoute>
-                            <MainMoviePage />
+                            <PostsMoviePage />
                         </ProtectedRoute>
                     }
                 ></Route>

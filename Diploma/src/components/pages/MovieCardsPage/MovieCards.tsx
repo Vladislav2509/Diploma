@@ -13,7 +13,7 @@ export const MovieCardsPage = ({ id, image, title, year }: MovieCardsProps) => {
       <Link to={`/Movie_Details/${id}`}>
         <img className="movieCardsImg" src={image} />
       </Link>
-      <Link to={`/Movie_Details/${id}`}>
+      <Link className="titleLink" to={`/Movie_Details/${id}`}>
         <h3 className="movieCardsTitle">{title}</h3>
       </Link>
       <h4 className="cardYear">{year}</h4>

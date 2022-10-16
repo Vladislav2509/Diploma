@@ -1,0 +1,19 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-weight: 900;
+  opacity: 0.8;
+  margin-bottom: 200px;
+}
+
+.paginationMaterial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: gainsboro;
+}

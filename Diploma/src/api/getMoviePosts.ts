@@ -1,14 +1,11 @@
-import { createAsyncThunk } from "@reduxjs/toolkit";
-import { APIError } from "../types/api.types";
 import { getExceptionPayload, publicRequest } from "./services";
 
 const DEFAULT_SEARCH_QUERY = "fantasy";
 
-export const getMoviePosts = createAsyncThunk<
-  any,
-  string,
-  { rejectValue: APIError }
->("getMoviePosts", async (searchQuery, { rejectWithValue }) => {
+export async function getMoviePosts(
+  searchQuery: string,
+  { rejectWithValue }: any
+) {
   try {
     const response = await publicRequest.get<Response>("", {
       params: {
@@ -22,4 +19,4 @@ export const getMoviePosts = createAsyncThunk<
   } catch (ex) {
     return rejectWithValue(getExceptionPayload(ex));
   }
-});
+}

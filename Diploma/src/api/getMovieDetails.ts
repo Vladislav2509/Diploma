@@ -1,12 +1,6 @@
-import { createAsyncThunk } from "@reduxjs/toolkit";
-import { APIError } from "../types/api.types";
 import { getExceptionPayload, publicRequest } from "./services";
 
-export const getMovieDetails = createAsyncThunk<
-  any,
-  string,
-  { rejectValue: APIError }
->("getMovieDetails", async (i, { rejectWithValue }) => {
+export async function getMovieDetails(i: any, { rejectWithValue }: any) {
   try {
     const response = await publicRequest.get<Response>("", {
       params: {
@@ -14,9 +8,8 @@ export const getMovieDetails = createAsyncThunk<
         i,
       },
     });
-
     return response.data;
   } catch (ex) {
     return rejectWithValue(getExceptionPayload(ex));
   }
-});
+}

@@ -17,13 +17,16 @@
   display: flex;
 }
 
+.titleLink {
+  text-decoration: none;
+}
+
 .movieCardsTitle {
   width: 300px;
   font-size: 18px;
   margin-bottom: 0;
   font-style: italic;
   color: white;
-  text-decoration: none;
   border-radius: 5px;
   background-color: #7b61ff;
   opacity: 0.9;

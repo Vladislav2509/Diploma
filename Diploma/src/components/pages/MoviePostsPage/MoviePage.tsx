@@ -1,36 +1,30 @@
 import { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { Pagination } from "@mui/material";
-import { getMoviePosts } from "../../../api/getMoviePosts";
+import { moviePostsAction } from "../../../store/moviePosts/moviePosts.actions";
 import { useAppDispatch } from "../../../store/store";
 import { MovieCardsPage } from "../MovieCardsPage/MovieCards";
+import { PostsPagination } from "../../Pagination/Pagination";
 import { Footer } from "../../Footer/Footer";
 import GridLoader from "react-spinners/GridLoader";
 import "./moviePageStyle.css";
 
-
-export function MainMoviePage() {
+export function PostsMoviePage() {
   const posts = useSelector((state: any) => state.moviePosts.postData);
-  const [page, setPage] = useState(1);
   const dispatch = useAppDispatch();
 
-  // Search
+  const [postsBounds, setPostsBounds] = useState([0, 0]);
+  const postsOnPage = posts.slice(postsBounds[0], postsBounds[1]);
+
+
   const [searchParams] = useSearchParams();
   const postQuery = searchParams.get("post") || "";
 
   useEffect(() => {
-    dispatch(getMoviePosts(postQuery));
+    dispatch(moviePostsAction(postQuery));
   }, [postQuery]);
 
-  // Pagination
-  const POSTS_COUNT_PAGE = 8;
-  const pagesCount = Math.ceil(posts.length / POSTS_COUNT_PAGE);
-  const start = (page - 1) * POSTS_COUNT_PAGE;
-  const end = start + POSTS_COUNT_PAGE;
-  const postsOnPage = posts.slice(start, end);
 
-  // SPINER
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -54,10 +48,7 @@ export function MainMoviePage() {
               </h1>
             </div>
 
-
-
-
-            <div className="wrapperPostFetch">
+            <div className="wrapperMoviePage">
               {postsOnPage &&
                 postsOnPage.map((result: any): JSX.Element => {
                   return (
@@ -73,20 +64,12 @@ export function MainMoviePage() {
                 })}
             </div>
 
-            <div className="pagination">
-              {pagesCount > 1 && (
-                <Pagination
-                  className="paginationMaterial"
-                  count={pagesCount}
-                  page={page}
-                  onChange={(_, num) => setPage(num)}
-                />
-
-              )}
-            </div>
+            <PostsPagination
+              postsCount={posts.length}
+              onChange={(start: any, end: any) => setPostsBounds([start, end])}
+            />
 
             <Footer />
-
           </>
         )}
       </div>

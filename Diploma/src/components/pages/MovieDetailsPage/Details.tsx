@@ -1,20 +1,21 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { getMovieDetails } from "../../../api/getMovieDetails";
+import { movieDetailsAction } from "../../../store/movieDetails/movieDetails.actions";
 import { useAppDispatch } from "../../../store/store";
 import { Footer } from "../../Footer/Footer";
 import iconBookmark from "../../../assets/icons/bookmark.svg";
 import "./detailsStyle.css";
 
+
 export function MovieDetailsPage() {
   const dispatch = useAppDispatch();
   const { movieID } = useParams();
 
-  const post = useSelector((state: any) => state.moviePosts.currentPost);
+  const post = useSelector((state: any) => state.movieDetails.currentPost);
 
   useEffect(() => {
-    if (movieID) dispatch(getMovieDetails(movieID));
+    if (movieID) dispatch(movieDetailsAction(movieID));
   });
 
   if (!post) {

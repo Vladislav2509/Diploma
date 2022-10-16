@@ -22,7 +22,7 @@
   color: white;
 }
 
-.wrapperPostFetch {
+.wrapperMoviePage {
   margin: auto;
   width: 1100px;
   display: grid;
@@ -30,26 +30,6 @@
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 12px;
   grid-row-gap: 13px;
-}
-
-.pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  font-weight: 900;
-  opacity: 0.8;
-  margin-bottom: 200px;
-}
-
-.paginationMaterial {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 500px;
-  height: 50px;
-  border-radius: 30px;
-  background-color: gainsboro;
 }
 
 @media screen and (max-width: 1200px) {
@@ -77,14 +57,9 @@
     color: white;
   }
 
-  .wrapperPostFetch {
+  .wrapperMoviePage {
     margin: auto;
     width: 850px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 12px;
-    grid-row-gap: 13px;
   }
 
   .pagination {
@@ -133,14 +108,9 @@
     color: white;
   }
 
-  .wrapperPostFetch {
+  .wrapperMoviePage {
     margin: auto;
     width: 650px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 12px;
-    grid-row-gap: 13px;
   }
 
   .pagination {
@@ -189,14 +159,9 @@
     color: white;
   }
 
-  .wrapperPostFetch {
+  .wrapperMoviePage {
     width: 450px;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 12px;
-    grid-row-gap: 13px;
   }
 
   .pagination {
@@ -239,14 +204,9 @@
     color: white;
   }
 
-  .wrapperPostFetch {
+  .wrapperMoviePage {
     width: 320px;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 12px;
-    grid-row-gap: 13px;
   }
 
   .pagination {
